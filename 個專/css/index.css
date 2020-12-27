@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    position: relative;
+    font-family: 微軟正黑體;
+    color: rgb(102, 102, 102);
+
+  }
+  body{
+    width: 1200px;
+    margin: 0;
+  }
+
+div.nav{
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  height: 50px;
+  background-color:#00ffff8c;
+  z-index: 10;
+  box-shadow: 0 0 -100px 0 red;
+
+}
+div.nav>.logo>a>img{
+  top: 10px;
+  left:20px;
+}
+div.nav>ul>li{
+  list-style: none;
+  display: inline;
+  padding: 15px 20px;
+  cursor: pointer;
+  
+}
+/* div.search>a>img{
+    width: 20px;
+    height: 20px;
+    vertical-align: baseline;
+}
+div.searchbar>input,div.searchbar>.search{
+    vertical-align: baseline;
+} */
+div.login>a,div.lang>a{
+  font-size: 14px;
+  /* right: 0px; */
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+div.login{
+  position: absolute;
+  right: 90px;
+}
+div.lang{
+  position: absolute;
+  right: 20px;
+}
+
+div.banner>img{
+  display: block;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+
+}
+div.banner{
+  height: 600px;
+  overflow: hidden;
+  /* -webkit-animation: round 25s linear infinite;
+  animation: round 25s linear infinite; */
+
+}
+div.banner-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+/* div.banner>imag.banner1,banner2,banner3{
+  filter: alpha(opacity=0);
+    -webkit-animation: silder 15s linear infinite;
+     animation: silder 15s linear infinite;
+} 
+@-webkit-keyframes silder {
+  3% {
+      opacity: 1;
+      filter: alpha(opacity=100);
+  }
+  27% {
+      opacity: 1;
+      filter: alpha(opacity=100);
+  }
+  30% {
+      opacity: 0;
+      filter: alpha(opacity=0);
+  }
+}
+@keyframes silder {
+  3% {
+      opacity: 1;
+      filter: alpha(opacity=100);
+  }
+  27% {
+      opacity: 1;
+      filter: alpha(opacity=100);
+  }
+  30% {
+      opacity: 0;
+      filter: alpha(opacity=0);
+  }
+} */
+/* **行程探索標題** */
+div.tour-outter>i>img{
+  width: 35px;
+  height: 35px;
+  margin-top:30px;
+  display:block;
+
+}
+div.tour-outter>i{
+display:block;
+position:flex ;
+left:50%; 
+
+}
+
+h3{
+  margin: 0;
+  position: absolute; ;
+  left:50%; 
+  transform: translate(-50%);
+}
+/* **行程探索** */
+div.tour-section>li{
+  list-style: none;
+  display: inline block;
+}
+.tour-section{
+  display: inline block;
+
+}
+div.tour-section>li>a>img{
+ width: 200px;
+ height: 200px;
+ 
+}
+div.tour-section>li>a>img.asia{
+  width: 300px;
+  height: 300px;
+  
+ }
+/* **旅人遊記標題** */
+div.blog-outter>i>img{
+  width: 35px;
+  height: 35px;
+  margin-top:30px;
+  display:block;
+
+}
+div.blog-outter>i{
+display:block;
+position:flex ;
+left:50%; 
+
+}
+
+h3{
+  margin: 0;
+  position: absolute; ;
+  left:50%; 
+  transform: translate(-50%);
+} 
+/* **旅人遊記** */
+div.blog-section{
+  border: 1px solid red;
+}
+.card1{
+  border: 1px solid red; 
+}
+.card2{
+  border: 1px solid red; 
+}
+.card3{
+  border: 1px solid red; 
+}
+.card4{
+  border: 1px solid red; 
+}
+/* ***footer***/
+div.footer-section>ul>li{
+  list-style: none;
+  display: inline;
+  padding: 15px 20px;
+  cursor: pointer; 
+}
+div.footer-section{
+  border: 1px solid red;
+  display: inline;
+}
+
+
+
