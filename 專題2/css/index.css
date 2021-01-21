@@ -27,8 +27,9 @@ a{
     /* border: 1px solid red; */
 }
 .row{
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     margin: 50px -16px;
+    /* box-shadow: rgba(0, 0, 0, 0.4); */
 
 
 }
@@ -212,7 +213,7 @@ a{
     cursor: pointer;
     opacity: 0;
     /* pointer-events: none; */
-  }
+  
   
   /* .wrapper nav .close_bar div::before, .wrapper nav .close_bar div::after {
     content: '';
@@ -266,8 +267,8 @@ a{
 
       
 
-@media screen and (max-width:768px){
-    div.navbar >ul.nav{
+@media all and (max-width:768px){
+    .navbar .nav{
         display: none;
         position: fixed;
         left: 0;
@@ -317,7 +318,7 @@ a{
     width: 48px;
     height: 48px;
     display: inline-block;
-    float:right;
+    /* float:right; */
     margin-top: 8px;
     display: none;
     z-index: 2;
@@ -620,7 +621,7 @@ div.tour-outter>i>img,div.blog-outter>i>img{
 }
 .service-item .title{
     font-size: 24px;
-    color:#3333333;
+    color:#333333;
     margin-bottom:8px;
     white-space:nowrap;
     overflow: hidden;
