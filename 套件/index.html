@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title> TweenMax動畫基本</title>
+</head>
+<body>
+    <div class="box basic">HELLO</div>
+    <div class="box from">2</div>
+    <div class="box fromTo">33</div>
+    <div class="box staggerTo">44</div>
+    <div class="box staggerTo">55</div>
+    <div class="box staggerTo">66</div>
+    <div class="mv0">99</div>
+    <div class="mv01">66</div>
+    <div class="mv02">66</div>
+    <div class="mv03">66</div>
+    <div class="pig" data-aos="fade-right">ABCSFDGuuuuuuAD</div>
+    
+</body>
+<script>
+   TweenMax.to('.basic', 1, {
+    //  x: 300, 
+    //  y: 100,
+     rotation:180,
+     transformOrigin: 'right bottom',
+     scale:2,
+     delay:2,
+     opacity:.8,
+    //  ease: Elastic.easeOut.config(1, 0.3)
+ });
+
+      TweenMax.from('.from',2,{
+          x:100,
+          opacity:1,
+          repeat:2,
+          yoyo:true,
+
+      })
+
+    TweenMax.fromTo('.fromTo',5 , {
+        x:400,
+        opacity:0,
+        ease: "bounce.out",
+        y: -50,
+        
+      },{
+        x:100,
+        opacity:1,
+        backgroundColor:'red',
+        boxShadow:'10px 10px 20px',
+        className: "+=1111",
+        });
+
+    TweenMax.staggerTo('.staggerTo',1 , {
+      x: -100,
+      opacity:1,
+      repeat:3,
+      yoyo:true,
+      ease: "elastic.out(1, 0.3)", 
+    },1) 
+
+
+    var tl = new TimelineMax({
+      repeat:2
+    });
+    tl.to('.mv01',1,{
+      x:100
+    }).to('.mv02',1,{
+      x:200
+    }).to('.mv03',1,{
+      x:300,
+      rotation:360
+    });
+
+  //   var tl9 = new TimelineMax
+  //   function alerts(){
+  //   tl9.to('.mv0',1,{x:100}).to('.mv0',1,{y:100}).to('.mv0',1,{
+  //     x:400
+  //   }).to('.mv0',1,{
+  //     y:200
+  //   })
+  
+  //     onComplete: alerts();
+  // }
+  // alert('動畫完成');
+  
+  
+    
+  AOS.init();
+
+    
+
+
+
+</script>
+</html>

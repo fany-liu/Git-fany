@@ -1,0 +1,273 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+html,body{
+    font-family: '微軟正黑體','arial';
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#333333;
+}
+.container{
+    max-width: 1200px;
+    width:100%;
+    margin: 0 auto;
+    padding-left:16px;
+    padding-right: 16px;
+    /* border: 1px solid red; */
+}
+.row{
+    border: 1px solid red; 
+    margin: 50px -16px;
+
+
+}
+.row:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.col-lg-6,.col-lg-4,.col-lg-3,.col-lg-12,
+.col-md-6,.col-md-4,.col-md-3,.col-md-12,
+.col-sm-6,.col-sm-4,.col-sm-3,.col-sm-12{
+    /* border: 1px solid blue; */
+    float:left;
+    padding-left:16px;
+    padding-right: 16px;
+}
+.col-lg-3{
+    width: 25%;
+}
+.col-lg-4{
+    width: 33.333333%;
+}
+.col-lg-6{
+    width: 50%;
+}
+.col-lg-12{
+    width: 100%;
+}
+@media screen and (max-width: 768px){
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-4{
+        width: 33.333333%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 540px){
+    .col-sm-3{
+        width: 25%;
+    }
+    .col-sm-4{
+        width: 33.333333%;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+}
+
+/* page title */
+.page-title{
+    padding-top: 224px;
+    padding-bottom: 160px;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.page-title .section-intro .title{
+    color:white;
+    font-size: 48px;
+    margin-bottom: 24px;
+    text-align: center;
+
+}
+.page-title .section-intro .para{
+font-size: 16px;
+color:white;
+font-size: 16px;
+line-height: 32px;
+text-align: center;
+
+}
+/* **麵包屑** */
+div.product-mb {
+ /* border: 1px solid red; */
+font-size: 18px;
+width: 80%;
+margin: 30px auto 10px;
+  }
+
+/**瀑布流***/
+ .masonry-row{
+    padding-left: -16px;
+    padding-right: -16px;
+    margin: 32px;
+
+
+}
+ .masonry-col{
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    
+
+}
+
+.hero:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.hero,
+ { 
+   margin: 0 auto;
+   max-width: 1200px;
+  }
+
+.masonry-col {
+    float: left;
+    margin: 10px 10px;
+    /* height: 100px; */
+    /* background:; */
+    /* border: 2px solid #333; */
+    /* border-color: blue; */
+}
+
+
+
+
+/* @media screen and (max-width:768px){
+    .masonry-col{
+        width: 50%;
+    }
+}
+
+@media (max-width:540px){
+        .masonry-col{
+            width: 100%;
+        }
+    } */
+    
+
+/* /**evaluation card** */
+.eval-card{
+    padding: 16px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .3);
+    /* margin: 0 50px; */
+    max-width: 100%;
+    /* border: 1px solid red; */
+    background-color: #FFFFFF;
+}
+.eval-card .image{
+    display: inline-block;
+    width: 100%;
+    margin-bottom:16px;
+
+
+}
+.eval-card .para{
+    font-size: 16px;
+    line-height: 32px;
+
+}
+
+
+/* ****footer*****/
+.footer{
+    background-image: url(../img/footer.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    
+    
+}
+
+/* .footer>.area{
+    height: 800px;
+
+} */
+.footer .logo{
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    background-image: url(../img/logo-your\ trip.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+footer.footer>.area{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width:540px){
+    .footer .logo{
+    width: 200px;
+    height: 200px;
+    }
+}
+.footer .nav{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+}
+
+.footer .nav .nav-link{
+    /* border: 1px solid white; */
+    color: #fefefe;
+    display: block;
+    padding: 24px;
+    line-height: 24px;
+    
+    transition: all 0.3s;
+}
+.footer .nav .nav-link:hover{
+    color: #d5a26f;
+
+}
+
+
+@media screen and (max-width:540px){
+    .footer .nav .nav-link{
+        padding: 24px 8px;
+    }
+}
+
+.footer .copyright{
+    background-color: rgba(0, 0, 0,.8);
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    padding: 16px 0;
+    font-size: 14px;
+    
+}
+
+
