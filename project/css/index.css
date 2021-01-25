@@ -5,6 +5,7 @@
 }
 html,body{
     font-family: '微軟正黑體','arial';
+    
 }
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
@@ -20,15 +21,16 @@ a{
 }
 .container{
     max-width: 1200px;
-    width:100%;
+    width:95%;
     margin: 0 auto;
     padding-left:16px;
     padding-right: 16px;
+    
     /* border: 1px solid red; */
 }
 .row{
     /* border: 1px solid red;  */
-    margin: 50px -16px;
+    margin: 50px 0px;
     /* box-shadow: rgba(0, 0, 0, 0.4); */
 
 
@@ -153,6 +155,9 @@ a{
 .navbar .nav .nav-link:hover{
     color: #d5a26f;
 }
+.navbar .nav .nav-item.active .nav-link{
+    color:#d5a26f;
+}
 .hamburger{
     /* display: none; */
     position: absolute;
@@ -163,108 +168,6 @@ a{
     color: white;
 
 } 
-/* ****close wrapper***
-.wrapper {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    letter-spacing: 3px;
-  }
-  
-  .wrapper a {
-    display: block;
-    color: #000;
-    text-decoration: none;
-  }
-  
-
-  
-  .wrapper nav {
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    right: -200vw;
-  }
-  
-  .wrapper nav ul {
-    list-style: none;
-  }
-  
-  .wrapper nav ul li {
-    margin: 30px 0;
-    font-size: 20px;
-    opacity: 0;
-  }
-  
-  .wrapper nav .close_bar {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 6%;
-    right: 5%;
-    cursor: pointer;
-    opacity: 0;
-    /* pointer-events: none; */
-  
-  
-  /* .wrapper nav .close_bar div::before, .wrapper nav .close_bar div::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background-color: #000000;
-    cursor: pointer;
-  }
-  
-  .wrapper nav .close_bar div::before {
-    transform: rotate(-45deg);
-    cursor: pointer;
-  }
-  
-  .wrapper nav .close_bar div::after {
-    transform: rotate(45deg);
-    cursor: pointer;
-  }
-  
-  .bar {
-    cursor: pointer;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 30px;
-    height: 20px;
-  }
-  
-  .humbar {
-    width: 30px;
-    height: 4px;
-    background: #fff;
-  }
-  
-  .humbar::before, .humbar::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-  }
-  
-  .humbar::before {
-    margin-top: 9px;
-  }
-  
-  .humbar::after {
-    margin-top: 18px;
-  } */ 
-
       
 
 @media all and (max-width:768px){
@@ -275,7 +178,7 @@ a{
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color:rgba(0, 0, 0);
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -286,11 +189,11 @@ a{
         
 
     }
-    #popup-menu:target{
+    /* #popup-menu:target{
         opacity: 1;
         visibility: visible;
         
-    }
+    } */
     
     .navbar .nav.active{
         opacity: 1;
@@ -304,7 +207,7 @@ a{
         display: inline-block;
         z-index: 1;
         color: white;
-        border: 1px solid red
+        /* border: 1px solid red */
         
     }
     ul#popup-menu.nav{
@@ -379,14 +282,14 @@ a{
     color: red;
 }
 
- .navbar .close-btn{
+ /* .navbar .close-btn{
     display: none;
     width: 48px;
     height: 48px;
     position:absolute;
     right:16px;
-    top:8px;
-} 
+    top:8px;} */
+
 
 @media screen and (max-width:768px){
     .navbar .close-btn{
@@ -428,8 +331,8 @@ a{
 .jumbotron{
     height: 800px;
     /* border: 1px solid red; */
-    padding-top: 224px;
-    padding-bottom: 160px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-image: url(../img/banner.jpg);
     background-size:cover;
     background-attachment: fixed;
@@ -515,8 +418,17 @@ a{
     }
 
 }
+
+.tour-outter .para,.section-service .para{
+	font-size: 16px;
+	line-height: 32px;
+	color: #333;
+	max-width: 480px;
+    margin: 0 auto;
+    
+}
 /* **行程探索標題** */
-div.tour-outter>i>img,div.blog-outter>i>img{
+div.tour-outter>i>img,div.section-service>i>img{
     width: 40px;
     height: 40px;
     margin-top:20px;
@@ -530,7 +442,11 @@ div.tour-outter>i>img,div.blog-outter>i>img{
     font-weight: bold;
     text-align:center;
     margin-top:0px;
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 24px;
   }
+  
   div.tour-outter{
   display: block;
   margin-top: 20px;
@@ -539,15 +455,41 @@ div.tour-outter>i>img,div.blog-outter>i>img{
   }
 
 .area{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border: 1px solid red;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* border: 1px solid red; */
+    clear: both;
+}
+
+div.container>div.right{
+    max-width: 960px;
+    width: 80%;
+    /* border: 1px solid green; */
+    box-shadow: 5px 5px 20px #888888;
+    float: right;
+}
+div.container>div.left{
+    max-width: 960px;
+    width: 80%;
+    /* border: 1px solid green; */
+    box-shadow: 5px 5px 20px #888888;
+    float: left;
+}
+div.area-info{
+    margin-bottom: 16px;
 }
 @media screen and (max-width:768px){
     .area{
         padding-top:30px;
         padding-bottom:30px;
     }
+    div.container>div.right,div.container>div.left{
+        display: block;  
+        width: 100%; 
+
+        
+    }
+        
 
 }
 .bg-white{
@@ -560,7 +502,7 @@ div.tour-outter>i>img,div.blog-outter>i>img{
     font-size: 32px;
     color: #333;
     margin-bottom: 24px;
-    margin-top:80px;
+    margin-top:50px;
 }
 
 .area-info .para{
@@ -617,6 +559,7 @@ div.tour-outter>i>img,div.blog-outter>i>img{
 
 .service-item .preview{
     padding-top: 16px;
+    padding-bottom: 16px;
 
 }
 .service-item .title{
@@ -689,8 +632,8 @@ div.tour-outter>i>img,div.blog-outter>i>img{
     background-position: center;
 }
 footer.footer>.area{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     /* border: 1px solid red; */
 }
 
@@ -736,5 +679,39 @@ footer.footer>.area{
     font-size: 14px;
     
 }
+
+/* rellax */
+.rellax{
+    position: absolute;
+}
+@media (max-width:1024px){
+    .rellax{
+        display: none;
+    }
+}
+.pararellax-1{
+    /* border: 1px solid red; */
+    width: 20%;
+    left: 10%;
+    top: -20%;
+}
+.pararellax-2{
+    /* border: 1px solid red; */
+    width: 20%;
+    right: 15%;
+    top: 100%;
+}
+.pararellax-3{
+    /* border: 1px solid red; */
+    width: 20%;
+    left: 30%;
+    top: 10%;
+} 
+.pararellax-4{
+    /* border: 1px solid red; */
+    width: 20%;
+    left: 10%;
+    top: 35%;
+} 
 
 
