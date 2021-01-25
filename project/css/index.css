@@ -691,26 +691,26 @@ footer.footer>.area{
 }
 .pararellax-1{
     /* border: 1px solid red; */
-    width: 20%;
+    width: 15%;
     left: 10%;
-    top: -20%;
+    top: 30%;
 }
 .pararellax-2{
     /* border: 1px solid red; */
-    width: 20%;
-    right: 15%;
+    width: 50%;
+    right: -20;
     top: 100%;
 }
 .pararellax-3{
     /* border: 1px solid red; */
-    width: 20%;
-    left: 30%;
+    width: 50%;
+    left: -30%;
     top: 10%;
 } 
 .pararellax-4{
     /* border: 1px solid red; */
-    width: 20%;
-    left: 10%;
+    width: 50%;
+    left: -30%;
     top: 35%;
 } 
 
