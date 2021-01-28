@@ -111,7 +111,7 @@ a{
     height: 64px;
     /* background-color: rgba(0, 0, 0, .8); */
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     left: 0;
     top: 0;
@@ -164,7 +164,7 @@ a{
     right: 0;
     top: 0;
     margin: 2px;
-    z-index: 2;
+    z-index: 20;
     color: white;
 
 } 
@@ -205,7 +205,7 @@ a{
     }
     .hamburger{
         display: inline-block;
-        z-index: 1;
+        z-index: 10;
         color: white;
         /* border: 1px solid red */
         
@@ -224,13 +224,12 @@ a{
     /* float:right; */
     margin-top: 8px;
     display: none;
-    z-index: 2;
+    z-index: 20;
     /* border: 1px solid blue; */
     position: absolute;
     right: 0;
     top: 0;
     margin: 2px;
-    z-index: 2;
     color: white;
 }
 @media screen and (max-width:768px){
@@ -240,7 +239,7 @@ a{
     right: 0;
     top: 0;
     margin: 2px;
-    z-index: 2;
+    z-index: 20;
     color: white;
     
 }
@@ -319,6 +318,129 @@ a{
 
 }
 
+/*登入box*/
+.login-modal-wrapper{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 30px 0 30px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .close-modal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    right: 20px;
+    color: rgba(128, 128, 128, 1);
+    cursor: pointer;
+    
+  }
+  /* .fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+  } */
+  
+  #login-form {
+    width: 100%;
+  }
+  
+  #login-form h2{
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  #login-form input{
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 12px 12px;
+    outline: none;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+  
+  #login-form input:focus{
+    outline: none;
+    border: 1px solid #03a9f4;
+  }
+  
+  #submit-btn {
+    display: inline-block;
+    padding: 10px 140px;
+    background-color: #2E9DEC;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  #submit-btn:hover{
+    background-color: #6A20FB;
+  }
+  
+  #sign-btn{
+    display: inline-block;
+    padding: 10px 140px;
+    /* background-color: transparent; */
+    border: none;
+    border-radius: 3px;
+    color: #2E9DEC;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 1px solid #2E9DEC;
+    transition: 1s;
+  }
+  
+  #sign-btn:hover{
+    color: #6A20FB;
+    border: 1px solid #6A20FB;
+  }
+  @media screen and (max-width:768px){
+  .modal {
+    top: 20%;
+    left: 10%;
+    padding: 15px 0 15px;
+    width: 300px;
+  }
+
+  #login-form input{
+    width: 240px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+
+  #submit-btn {
+    display: inline-block;
+    padding: 10px 100px;
+
+  }
+
+  #sign-btn{
+    display: inline-block;
+    padding: 10px 100px;
+    margin: 10px auto;
+  }
+  }
 
 .mask-dark{
     width: 100%;
@@ -331,8 +453,8 @@ a{
 .jumbotron{
     height: 800px;
     /* border: 1px solid red; */
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url(../img/banner.jpg);
     background-size:cover;
     background-attachment: fixed;
@@ -354,11 +476,23 @@ a{
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+.searchbar{
+    width: 320px;
+    padding: 5px 0 5px 0 ;
+    border-radius: 5px;
+    
+}
+
 @media screen and (max-width:768px){
     .jumbotron .logo-image{
     width: 200px;
     height: 200px;
     }
+
+    .searchbar{
+        width: 200px;
+    }
+
 }
 .btn{
     display: inline-block;
@@ -442,7 +576,7 @@ div.tour-outter>i>img,div.section-service>i>img{
     font-weight: bold;
     text-align:center;
     margin-top:0px;
-    font-size: 48px;
+    font-size: 36px;
     color: #333333;
     margin-bottom: 24px;
   }
@@ -545,7 +679,7 @@ div.area-info{
 
 }
 .section-service .title{
-    font-size: 48px;
+    font-size: 36px;
     color: #333333;
     margin-bottom: 24px;
 
