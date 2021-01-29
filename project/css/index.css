@@ -334,6 +334,7 @@ a{
     position: absolute;
     top: 20%;
     left: 34%;
+    /* transform: (-50%,-50%); */
     background-color: #e6ecf0;
     padding: 30px 0 30px;
     border-radius: 10px;
@@ -417,7 +418,7 @@ a{
   @media screen and (max-width:768px){
   .modal {
     top: 20%;
-    left: 10%;
+    left: 30%;
     padding: 15px 0 15px;
     width: 300px;
   }
