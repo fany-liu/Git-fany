@@ -856,6 +856,10 @@ footer.footer>.area{
     .rellax{
         display: none;
     }
+    .js-fadeInLeft,.js-fadeInRight{
+        display: none;
+
+    }
 }
 .pararellax-1{
     /* border: 1px solid red; */
