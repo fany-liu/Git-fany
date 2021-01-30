@@ -764,6 +764,13 @@ div.area-info{
 .conctus .section-service .para{
     color: white;
 }
+@media screen and (max-width:768px){
+    .conctus
+    background-attachment: scroll;
+}
+
+}
+
 
 /* ****footer*****/
 .footer{
