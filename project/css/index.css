@@ -709,7 +709,7 @@ div.area-info{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 30px 0;
+    margin: 30px auto;
     /* border-top-right-radius : 500px;
     border-bottom-left-radius : 500px; */
     
@@ -892,10 +892,6 @@ div.gotop{
 @media (max-width:1024px){
     .rellax{
         display: none;
-    }
-    .js-fadeInLeft,.js-fadeInRight{
-        display: none;
-
     }
 }
 .pararellax-1{

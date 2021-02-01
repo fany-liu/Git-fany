@@ -68,6 +68,7 @@ header.header>div.navbar{
 	bottom: 0;
 	display: flex;
 	align-items: center;
+	margin-top: 80px;
 }
 .slider-item__title{
 	font-size: 64px;
@@ -81,6 +82,11 @@ header.header>div.navbar{
 	color: #fff;
 	line-height: 32px;
 	margin-bottom: 32px;
+}
+@media screen and (max-width: 768px){
+	.slider-item__title{
+		font-size: 48px;
+	}	
 }
 
 /* owl-theme */
@@ -271,7 +277,7 @@ div.product-mb {
     background-color: #f4f4f4;
     border-radius: 20px;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     box-shadow: 3px 3px 15px #ccc;
     padding: 20px;
     vertical-align: center;
@@ -284,12 +290,15 @@ div.product-mb {
 	/* width: 100%; */
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+	justify-content: center;
+	/* flex-direction: row; */
+	
 }
 .left-menu li{
     padding: 15px;
     list-style: none;
-    position: relative;
+	position: relative;
+	display: flex;
 }
 .left-menu a{
     text-decoration: none;
@@ -297,7 +306,9 @@ div.product-mb {
     opacity: 0.5;
     transition: 0.5s;
     font-weight: 700;
-    font-size: 20px;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
 }
 .here a{
     opacity: 1;
@@ -326,11 +337,13 @@ div.product-mb {
     left: 0;
 }
 .main-content{
-    width: 768px;
+	max-width: 1200px;
+    width: 100%;
     
 }
 .main-content .item{
-    max-width: 100%;
+	max-width: 1200px;
+	width: 100%;
     background-color: #fff;
     margin: 10px;
     border-radius: 10px;
@@ -344,7 +357,8 @@ div.product-mb {
     flex-flow: column wrap;
     justify-content: center;
     align-items: flex-start; */
-    max-width: 100%;
+	max-width: 1200px;
+	width: 100%;
 }
 .item-img{
     width: 20%;
