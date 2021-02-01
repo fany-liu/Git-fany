@@ -43,8 +43,27 @@ div.product-mb {
     padding: 30px 10px;
     /* height: 2000px; */
 }
+@media screen and (max-width:768px){
+    .jumbotron .logo-image{
+    width: 200px;
+    height: 200px;
+    }
+    .jumbotron{
+        width: 100%;
+    }
+    
 
+    .searchbox{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .js-fadeInBottom{
+        margin-right: 0px;
 
+    }
+    
+
+}
 
 
 div.question, div.answer, ol>li{
