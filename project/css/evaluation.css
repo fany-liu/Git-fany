@@ -270,5 +270,20 @@ footer.footer>.area{
     font-size: 14px;
     
 }
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 10px;
+   border-radius: 50%;
+   /* border-top: 2px solid rgb(255, 190, 51); */
+   background-color: #38b591;
+   display: none;
+   z-index: 500;
+   transform: rotate(-90deg);
+}
 
 

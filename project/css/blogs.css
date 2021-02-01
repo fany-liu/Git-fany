@@ -25,7 +25,9 @@ header.header>div.navbar{
 }
 
 .jumbotron-banner{
-    height: 100%;
+	max-width: 1200px;
+	width: 100%;
+    /* height: 100%; */
     /* border: 1px solid red; */
      /* padding-top: 65px;
      padding-bottom: 50px;  */
@@ -87,6 +89,10 @@ header.header>div.navbar{
 	.slider-item__title{
 		font-size: 48px;
 	}	
+	.jumbotron-banner{
+	width: 100%;
+	 background-attachment: scroll;
+	}
 }
 
 /* owl-theme */
@@ -391,6 +397,7 @@ div.product-mb {
 	overflow:hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	width: 100%;
 	}
 
 .page{
@@ -446,7 +453,7 @@ div.pagination_block > ul.pagination > li:last-child > a{
 		/* height: 100px; */	
 	}
 	.item .item-txt, .ellipsis{
-		width: 100%;
+		width: 90%;
 		text-align: center;
 		/* padding-left: 20px;
 		padding-top: 20px; */

@@ -432,10 +432,12 @@ a{
   }
   @media screen and (max-width:768px){
   .modal {
-    top: 20%;
-    left: 30%;
+    position:absolute; 
+    top:50%; 
+    left:50%;
+    transform: translate(-50%,-50%);
     padding: 15px 0 15px;
-    width: 300px;
+   
   }
 
   #login-form input{
@@ -521,7 +523,7 @@ a{
     }
 
     .searchbox{
-        width: 100%;
+        width: 80%;
     
     }
     
@@ -862,7 +864,7 @@ footer.footer>.area{
 
 @media screen and (max-width:540px){
     .footer .nav .nav-link{
-        padding: 24px 8px;
+        padding: 24px 6px;
     }
 }
 
