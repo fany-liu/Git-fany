@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+html,body{
+    font-family: '微軟正黑體','arial';
+    margin: 0;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.header::before{
+   
+    display: block;
+    clear: both;
+    content:'';
+    height: 64px;
+    
+}
+header.header>div.navbar{
+    z-index: 2;
+    background-color: black;
+
+}
+
+/* **麵包屑** */
+div.product-mb {
+    /* border: 1px solid red; */
+    font-size: 20px;
+    width: 80%;
+    margin: 30px auto;
+    font-weight: bold;
+    
+    
+}
+.qa-container{
+    /* border: 1px solid dodgerblue; */
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    /* height: 2000px; */
+}
+
+
+
+
+div.question, div.answer, ol>li{
+    font-size: 18px;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+div.answer, ol>li{
+    font-size: 18px;
+}
+ol>li{
+    border:  none;
+    list-style: initial;
+}
+
+div.question{
+    font-weight: 600;
+    /* background-color:#d5a26f; */
+}
+div.question:hover{
+    background-color:#df9c63;
+
+}
+
+  
+div.answer{
+    display: none;
+    /* background-color: coral; */
+}
+
+div.qa_card{
+    margin: 10px 0px;
+    border: 2px solid rgb(151, 91, 21);
+    border-radius:5px ;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+div.gotop{
+    /* border: 1px solid rgb(240, 240, 240); */
+   display: inline-block;
+   position: fixed;
+   right: 5%;
+   bottom: 5%;
+   cursor: pointer;
+   padding: 10px;
+   border-radius: 50%;
+   /* border-top: 2px solid rgb(255, 190, 51); */
+   background-color: #38b591;
+   display: none;
+   z-index: 500;
+   transform: rotate(-90deg);
+}

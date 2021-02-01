@@ -1,0 +1,182 @@
+/* 共用部分 inclued:RWD . 字型 . navigation .  footer */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    position: relative;
+    color: rgb(102, 102, 102);
+    font-family: 微軟正黑體;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+@font-face{
+    font-family: "Source";
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    
+}
+body {
+    line-height: 1.2;
+    font-size: 16px;
+    font-family: 'Source', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;    
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix{
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    width: 80vw;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: black;
+}
+footer .container{
+    padding: 30px 20px;
+}
+.contacts{
+    display: none;
+}
+.social_media{
+    position: relative;
+    margin: auto;
+}
+.fa {
+    padding: 10px;
+    font-size: 32px;
+    width: 16px;
+    height: 16px;
+    border-radius: 36px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.fa-pinterest {
+background: #cb2027;
+color: white;
+}
+.footerlogo img{
+    display: none;
+    width:70%;
+    margin:auto;
+    padding-left:12px; 
+    
+}
+footer .content_font_size{
+    text-align: left;
+    padding-left:12px; 
+    margin: 0;
+}
+
+@media screen and (min-width:768px){
+    .footerlogo img{
+        display: inline-block;
+        max-width: 180px;
+    } 
+    .contacts{
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:370px){
+    .col-sm-12{ width: 100%; }
+}
+
+/* 字體字型字級 */
+
+@font-face {
+    font-family: '思源黑體';
+    src: url('<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">') format('truetype');
+    }
+.title_eng{
+    font-size: 60px;;
+    width: 100vw;
+    margin: 80px 0 0 0;
+    font-weight: bolder;
+    text-align: center;
+    color: #F7931E;
+}
+
+.title_chinese{
+    font-size: 30px;
+    width: 100vw;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color:#f7931e; 
+}
+
+.sub_title_eng{
+    font-size: 30px; 
+    position: relative;  
+}
+.sub_title_chinese{
+    font-size: 18px;
+    font-weight:bolder;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 100px;
+}
+
+.content_font_size{
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.hover_ani:hover{
+    transform: scale(1.2);
+    transition: .4s  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-size: 16px;
+    
+}
+.hover_pic:hover{
+    transform: scale(1.2);
+    transition: .4s cubic-bezier(0.4, -0.35, 0.65, 1.25) ;
+}

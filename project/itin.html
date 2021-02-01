@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Trip首頁</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/header.footer.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/itin.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/assets/owl.theme.default.css">
     
     
 </head>
@@ -15,6 +17,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="navbar" style="background-color: black;">
+                <div class="clear"></div>
                 <div class="container">
                     <a href="index.html" class="logo">
                         <h1>Your Trip</h1>
@@ -68,14 +71,27 @@
             </div>
             </div>
         </div>
+
+        <!-- /麵包屑 -->
+        <div class="product-mb">
+            <a href="index.html">首頁</a>
+            <font >/</font>
+            <a href="itin-exploration.html">行程探索</a>
+            <font>/</font>
+            <a href="#abc">台灣</a>
+            <font>/</font>
+            <a href="itin-list.html">台北</a>
+            
+        </div>
         <!-- area star -->
         <section class="main">
-            <div class="hero bg-gray" >
+            <div class="hero" >
                 <div class="container">
                     <div class="product-item wow">
                         <div class="row" style="align-items: center;" >
                             <div class="col-lg-6">
                                 <div class="imag-container rellax" data-rellax-speed="-3">
+                                   <div id="heart" class="heart">&#10084;</div>
                                    <img src="./img/女王頭.png" alt="" class="imag">
                                 </div>
                             </div>
@@ -87,22 +103,109 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="section-intro">
+						<h2 class="title">MENU</h2>
+						<p class="para">我們提供的服務在這裡有初步的介紹，諸如此類的介紹等等<br>多的文字就可以換行繼續寫</p>
+                    </div> -->
+                </div>
+					<div class=" stop-list">
+						<div class="title-bar">
+							<h3 class="title">景點簡介與照片</h3>
+							<!-- <a href="#!" class="btn btn-secondary">more</a> -->
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                            <div >
+                                <a href="#!">
+									<div class="list-item">
+										<div class="image-container">
+											<div class="image" style="background-image: url(./img/袋鼠.png);"></div>
+										</div>
+										<div class="preview">
+											<h5 class="title">阿里山火車</h5>
+											<h6 class="subtitle">供應的條件</h6>
+										</div>
+									</div>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#!">
+									<div class="list-item">
+										<div class="image-container">
+											<div class="image" style="background-image: url(./img/熱氣球.png);"></div>
+										</div>
+										<div class="preview">
+											<h5 class="title">阿里山火車</h5>
+											<h6 class="subtitle">供應的條件</h6>
+										</div>
+									</div>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#!">
+									<div class="list-item">
+										<div class="image-container">
+											<div class="image" style="background-image: url(./img/熱氣球.png);"></div>
+										</div>
+										<div class="preview">
+											<h5 class="title">阿里山火車</h5>
+											<h6 class="subtitle">供應的條件</h6>
+										</div>
+									</div>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#!">
+									<div class="list-item">
+										<div class="image-container">
+											<div class="image" style="background-image: url(./img/熱氣球.png);"></div>
+										</div>
+										<div class="preview">
+											<h5 class="title">阿里山火車</h5>
+											<h6 class="subtitle">供應的條件</h6>
+										</div>
+									</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="title-bar">
+                            <h3 class="title">每人費用</h3>
+                            <br>
+                            <p class="para">12歲以上:每位NT$ 3,600<br />
+                                7-11歲:每位NT$ 3,000<br />
+                                0-6歲:每位NT$ 1,000</p>
+							<!-- <a href="#!" class="btn btn-secondary">more</a> -->
+                        </div>
+                        <div class="title-bar">
+                            <h3 class="title">活動包含</h3>
+                            <br>
+                            <p class="para">行程說明之活動體驗、餐食<br />
+                                旅遊責任險 200 萬 + 20 萬醫療險<br />
+                                中或英文服務人員</p>
+							<!-- <a href="#!" class="btn btn-secondary">more</a> -->
+                        </div>
+                        <div class="title-bar">
+                            <h3 class="title">取消規則</h3>
+                            <br>
+                            <p class="para">出發日前 48 小時內取消預訂，將全額退款；<br>
+                                出發日前 48-24 小時取消預訂，將收取手續費50%；<br>
+                                出發日 24 小時內取消預訂，將不予退款。<br>
+                                出發日當日，如事前無聯絡，或是超過集合時間15分鐘未出席，即以No Show方式處理，並不予以退費。</p>
+							<!-- <a href="#!" class="btn btn-secondary">more</a> -->
+                        </div>
+                        
                 </div>
                 
             </div>
             
             <!-- ***area end** -->
 
-          
-
-            <!-- ***blog  star*** -->
             <div class="area bg-gray">
                 <div class="container">
                     <div class="section-service">
-                        <i><img src="./img/location.png" alt="icon"></i>
-                        <h2 class="title">旅人遊記</h2>
-                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati saepe dolorum asperiores quae magni rem iure ab a, corporis, harum exercitationem? Voluptate rerum quam recusandae ab ad nihil temporibus fuga deleniti eius illum, deserunt, at alias! Incidunt repudiandae asperiores cum vero reprehenderit, beatae laudantium ullam porro explicabo eos nam soluta laborum repellat magni magnam modi enim itaque a sunt possimus quae hic quia. Est velit necessitatibus, beatae sapiente quod rem? Incidunt, sit voluptatum aperiam quibusdam iure voluptatem quia accusantium vitae laboriosam blanditiis? Quod asperiores alias accusamus animi saepe quidem dolor perferendis. Harum quos velit ut provident non culpa voluptatem beatae soluta architecto tenetur repudiandae corporis, natus quae eaque iusto cumque quasi assumenda illum, voluptatibus molestias possimus voluptate rerum error. Alias accusantium inventore aut dolorem beatae sit eum voluptas tempore, repellat sed non id commodi ipsa. Soluta exercitationem amet odit libero fugit, labore placeat, maxime reiciendis odio ipsum consectetur suscipit corrupti explicabo earum. Similique sed quidem excepturi delectus blanditiis? Dolorum quasi totam iure fugit molestias deserunt quia omnis optio vero nostrum, nam voluptatum veritatis cumque sint amet eos? Adipisci omnis iusto libero quia consequatur dolorem odio iste, aperiam earum laudantium. Minus, deserunt nam laborum quasi delectus mollitia voluptatem libero qui ut reprehenderit sapiente, labore placeat numquam quas suscipit soluta veritatis cumque totam accusamus voluptatibus. Distinctio magnam aliquid amet perferendis sed? Consectetur sit pariatur necessitatibus repellendus vitae temporibus earum delectus doloribus adipisci, ut dolore minima aliquam corporis quibusdam voluptas similique iusto! Vel quos quasi, fugit unde nobis cupiditate iusto delectus itaque voluptas soluta voluptatem! Rem architecto ab ratione veritatis natus, praesentium, rerum facilis necessitatibus unde in voluptates optio maxime, alias tempore ex placeat. Earum, autem ea quos modi est tempore accusamus natus molestias, saepe maiores dicta illo, officia velit. Tempora, soluta facilis. Harum architecto excepturi necessitatibus, natus saepe, est eius quidem sit voluptatum recusandae consequuntur porro. Repudiandae natus assumenda praesentium consequuntur, libero quisquam ipsa aut in, harum molestias vitae dolores eaque error maiores totam! Eaque possimus accusantium, provident ex, at esse laboriosam eligendi repellat vel praesentium magni asperiores illum. Dolore, exercitationem ipsa hic reprehenderit fugiat distinctio quod voluptatum nisi, totam laboriosam animi pariatur quo rem odit eius minus fugit omnis blanditiis numquam temporibus illum. Alias nisi repellendus corporis excepturi quo, debitis recusandae enim! Quam repellendus odio vero iusto adipisci molestiae corporis, provident repudiandae quidem tempore, consequatur sapiente maiores facere, rem cumque delectus maxime? Architecto qui molestias accusamus corrupti impedit ipsam repudiandae similique laudantium provident explicabo enim, hic laborum numquam, nisi eius dolorum quod alias sequi perspiciatis fugiat doloremque! Similique sed beatae laborum atque saepe aperiam consectetur eaque omnis nemo nulla voluptatibus voluptate ullam ratione ab repellat fugiat, asperiores praesentium quae nam quos autem, hic molestiae a. Corrupti provident odit perferendis voluptas sit sint obcaecati est ipsum cupiditate eaque labore excepturi adipisci minus, reprehenderit enim accusantium architecto, officia, aliquid ipsa quidem nam nisi voluptatibus eligendi illo. Error ullam cupiditate, ex animi rem officia facere et esse nihil libero sint dolore unde odit saepe reiciendis doloremque? Nihil optio id explicabo adipisci obcaecati laboriosam maiores.                        </p>
-                        <a href="#!" class="btn btn-secondary lg-display">更多</a>
+                        <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+                        <h2 class="title">推薦行程</h2>
+                        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum cumque earum reiciendis porro optio laboriosam ipsa soluta dicta laborum obcaecati eligendi, in enim excepturi ullam molestiae doloribus perspiciatis quis?</p>
+                        <!-- <a href="#!" class="btn btn-secondary lg-display">更多</a> -->
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -185,6 +288,7 @@
     <script src="vendor/rellax/rellax.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script src="./vendor/wow/wow.min.js"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
     <script>
     
           
@@ -235,9 +339,7 @@
         wow.init();
     })
 
-    
-
-        
+            
     </script>
 <script>
 
@@ -270,7 +372,46 @@ ScrollReveal().reveal('.service-item',{
     reset: true,
     interval: 300,
 });
-    </script>
+
+$('.owl-carousel').owlCarousel({
+    responsive:{
+        0:{
+            items:2
+        },
+        769:{
+            items:3
+        }
+    },
+    nav:true,
+    margin:32,
+    autoplay:true,
+    autoplayTimeout:3000,
+    loop: true,
+
+
+})
+
+//加入收藏 或 取消收藏
+function switchFavorite(){
+ var getHp=document.getElementById("heart");
+ if(getHp.title=="加入收藏"){
+  getHp.src="heart_red.png";
+  getHp.title="取消收藏";
+ }else {
+  getHp.src="heart_white.png";
+  getHp.title="加入收藏";
+ }
+}
+
+function init(){
+ //設定[加入收藏 或 取消收藏]的點按事件
+ document.getElementById("heart").onclick=switchFavorite;
+   window.alert(document.getElementById("heart").src);
+
+}//init
+window.onload = init;
+
+</script>
     
 
 </html>
