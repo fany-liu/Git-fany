@@ -3,56 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Trip 評價</title>
+    <title>Your Trip 旅客評價</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
     <link rel="stylesheet" href="./css/evaluation.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="navbar">
+        <header class="header" >
+            <div class="navbar" style="z-index: 500;">
                 <div class="container">
-                    <a href="#!" class="logo">
+                    <a href="index.html" class="logo">
                         <h1>Your Trip</h1>
                     </a>
                     <ul id="popup-menu" class="nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">行程探索</a>
+                            <a href="itin-list.html" class="nav-link">行程探索</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#!" class="nav-link">客製服務</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#!" class="nav-link">旅人遊記</a>
+                            <a href="contactUs.html" class="nav-link">客製服務</a>
                         </li>
                         <li class="nav-item active">
+                            <a href="blogs.html" class="nav-link">旅人遊記</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="evaluation.html" class="nav-link">旅客評價</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#!" class="nav-link">常見問題</a>
+                            <a href="Q&A.html" class="nav-link">常見問題</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="login-show" class="nav-link">登入/註冊</a>
                         </li>
                         
-
                     </ul>
-                    <!-- <a href="#popup-menu" class="menu-toggle">
+                
+                    <a href="#popup-menu" class="menu-toggle">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </a> -->
-                    <button class="hamburger hamburger--squeeze " type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
+                    </a> 
                 </div>
                 
             </div>
-
+            
+    
+    
         </header>
+        <!-- 登入燈箱 -->
+        <div class="login-modal-wrapper" id="login-modal">
+            <div class="modal">
+            <div class="close-modal">
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <div id="login-form">
+                <h2>會員登入</h2>
+                <form action="#">
+                <input class="form-control" type="text" placeholder="請輸入Email">
+                <input class="form-control" type="password" placeholder="請輸入密碼">
+                <div id="submit-btn">登入</div>
+                <div id="sign-btn">註冊</div>
+                </form>
+            </div>
+            </div>
+        </div>
         <section class="main evaluation-page">
             <!-- star page title -->
             <div class="page-title">
@@ -66,13 +83,10 @@
             <!-- end page title -->
 
             <div class="product-mb">
-                <a href="index.html">首頁</a>
+                <a href="./index.html">首頁</a>
                 <font >/</font>
-                <a href="itin-exploration.html">行程探索</a>
-                <font>/</font>
-                <a href="#abc">台灣</a>
-                <font>/</font>
-                <a href="itin-list.html">台北</a>
+                <a href="#">旅客評價</a>
+                
                 
             </div>
             <!-- star evaluation -->
@@ -82,79 +96,83 @@
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12" >
                                 <div class="eval-card js-fadeInBottom">
                                     <img class="image" src="./img/evaluation//003.jpg" alt="">
-                                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis</p>
+                                    <p class="para">5人一行於11月前往台北，我們進行了為期4天的私人之旅。我與Max一起行程，他非常耐心地回答我的所有問題，並與我一起修改行程。沃倫（Warren）是我們的導遊，他非常包容，竭盡全力確保我們度過愉快的時光。他甚至願意調整工作時間，並在某些日子里工作更長的時間，以便我們能夠跟上我們的行程。旅遊公司和沃倫非常熱心。他們讓我們覺得我們在台北有一個家庭，總是在提防我們確保我們安全並度過愉快的時光。我向我的家人和朋友推薦旅遊公司，當我返回台灣時，一定會再次與他們聯繫。</p>
                                     </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                     <div class="eval-card js-fadeInBottom">
                                         <img class="image" src="./img/evaluation//002.jpg" alt="">
-                                        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                        <p class="para">優秀的導遊蔡先生。我們對Justaiwantour團隊的服務和導遊感到非常滿意。準時，乾淨的巴士，友好且非常專業的導遊蔡（Alex Tsai）。亞歷克斯（Alex）幫助維持完善的需求計劃。我們都喜歡有這個私人旅遊。</p>
                                     </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                     <div class="eval-card js-fadeInBottom">
                                         <img class="image" src="./img/evaluation//001.jpg" alt="">
-                                        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                        <p class="para">Ken Ho是我們一日遊的導遊。是一位經驗豐富，彬彬有禮和知識淵博的導遊。由於天氣原因進行了調整。肯在一家正宗的台灣餐廳預約了午餐，幫助我們點菜並解釋了食物。下次去台灣旅行我強烈建議肯（Ken）。</p>
                                     </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                     <div class="eval-card js-fadeInBottom">
-                                        <img class="image" src="./img/evaluation//002.jpg" alt="">
-                                        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                        <img class="image" src="./img/evaluation/dark-1.jpg" alt="">
+                                        <p class="para">行程便宜,導遊服務良好</p>
                                     </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                     <div class="eval-card js-fadeInBottom">
-                                        <img class="image" src="./img/evaluation//003.jpg" alt="">
-                                        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                        <img class="image" src="./img/evaluation/dark-2.jpg" alt="">
+                                        <p class="para">導遊遲到,車子太舊,景點停留時間太短,不推薦!</p>
                                     </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                     <div class="eval-card js-fadeInBottom">
                                         <img class="image" src="./img/evaluation//004.jpg" alt="">
-                                        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                        <p class="para">由於我們將很快搬遷到另一個國家。我和我的妻子決定在我們在台北的最後一晚住在我們最喜歡的酒店，我們在新年前夜和這裡度過了台灣重要的日子。進入時我們會立即感到輕鬆和溫馨，我們將錯過上海遠東的熱情好客和一流的設施，希望我們回到台北後能很快再次光臨它</p>
                                     </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                 <div class="eval-card js-fadeInBottom">
-                                    <img class="image" src="./img/evaluation//003.jpg" alt="">
-                                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                    <img class="image" src="./img/evaluation/woman.jpg" alt="">
+                                    <p class="para">代訂的房間很大，冬天的食物和游泳都太瘋狂了。...哈哈，幸運的是游泳池裡有溫水...房間很乾淨，床很舒服，整個酒店的服務都很棒。我們一定會再來的。
+                                        閱讀更多</p>
                                 </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                 <div class="eval-card js-fadeInBottom">
-                                    <img class="image" src="./img/evaluation//002.jpg" alt="">
-                                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                    <img class="image" src="./img/evaluation/child.jpg" alt="">
+                                    <p class="para">導遊在購物和用餐建議方面特別有幫助。提供建議，提供地圖和建議。我們確實有我們所希望的那種旅行體驗。肯定會再參加行程！</p>
                                 </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                 <div class="eval-card js-fadeInBottom">
-                                    <img class="image" src="./img/evaluation//004.jpg" alt="">
-                                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. </p>
+                                    <img class="image" src="./img/evaluation/girl.jpg" alt="">
+                                    <p class="para">很棒的導遊和很棒的餐廳。感謝您照顧每一個旅客。 </p>
                                 </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                 <div class="eval-card js-fadeInBottom">
-                                    <img class="image" src="./img/evaluation//001.jpg" alt="">
-                                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                    <img class="image" src="./img/evaluation/man.jpg" alt="">
+                                    <p class="para">台北市中心是放鬆身心的絕妙場所。我們享受游泳，水療，運動，飲食，睡眠，音樂...以及台北101大道和一排城市道路綠樹的陽光美景。</p>
                                 </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                 <div class="eval-card js-fadeInBottom">
-                                    <img class="image" src="./img/evaluation//001.jpg" alt="">
-                                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                    <img class="image" src="./img/evaluation/entrepreneur.jpg" alt="">
+                                    <p class="para">我有史以來參加最好旅遊體驗服務，我相信我會再次回來。車子非常舒適，我和我的家人非常愉快。</p>
                                 </div>
                             </div>
                             <div class="masonry-col col-lg-4 col-md-6 col-sm-12">
                                 <div class="eval-card js-fadeInBottom">
-                                    <img class="image" src="./img/evaluation//001.jpg" alt="">
-                                    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium fugiat provident repellendus. Mollitia libero veritatis maxime. Doloremque aspernatur aliquid consectetur quam, harum, libero, magni quo velit recusandae ex mollitia?</p>
+                                    <img class="image" src="./img/evaluation/girl2.jpg" alt="">
+                                    <p class="para">導遊非常友好和包容。他們使我的旅行變得完美。</p>
                                 </div>
                             </div>
                       </div>
                           
                     </div>
               </div>
+              <div class="gotop">
+                <i class="fas fa-fighter-jet fa-2x"></i>
+              </div> 
 
             <!-- end evaluation -->
         </section>
@@ -171,7 +189,7 @@
                             <a href="#" class="nav-link">關於我們</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">聯絡我們</a>
+                            <a href="./contactUs.html" class="nav-link">聯絡我們</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">人才招募</a>
@@ -193,30 +211,72 @@
     <script src="./vendor/isotope/isotope.pkgd.js"></script>
     <script src="vendor/infinite/infinite-scroll.pkgd.min.js"></script>
     <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <script>
-    $(function(){
-  // hamburger icon 的切換
-  $("button.hamburger").on("click", function(){
-    $(this).toggleClass("is-active");
-  });
-  });
+       
+        $(document).ready(function(){
+             //導覽列顏色變化//
+            $(window).scroll(function(){
+                    scrolledPx = $(this).scrollTop();
+                    if (scrolledPx >=5){ 
+                        $('.navbar').addClass('active');
+                    } else{
+                        $('.navbar').removeClass('active');
+                    }
+                })
+        
+            //漢堡切換
+                $('.menu-toggle').on('click',function(){
+                    $(this).toggleClass('active');
+                    $('.navbar .nav').toggleClass('active');
+                })
+                $('.nav-link').on('click',function(){
+                    $('.menu-toggle').removeClass('active');
+                    $('.navbar .nav').removeClass('active');
+                })
+        
+            //     $('.owl-carousel').owlCarousel({
+            //     items: 1,
+            //     nav: true,
+            //     navText: [],
+            //     loop: true,
+            //     mouseDrag: false,
+            //     autoplay:true,
+            //     autoplayTimeout:3000,
+            // })
+            // $('.owl-carousel').on('changed.owl.carousel',function(event) {
+            //     $('.slider-transition').addClass('animated');
+            //     setTimeout(function(){
+            //         $('.slider-transition').removeClass('animated');
+            //     },800)
+            // })
+            // 會員登入
+        $(function () {
+        $('#login-show').click(function () {
+            $('#login-modal').fadeIn();
+        });
 
-//   $(function(){
-//      $(‘.hamburger‘).mouseclick(function(){
-//        $(this).children(‘.nav‘).show();
-//      });
-//     $(‘.hamburger‘).mouseup(function(){
-//   $(this).children(‘.nav‘).hide();
-// });
-// });
+        $('.close-modal').click(function () {
+            $('#login-modal').fadeOut();
+        });
+        });
 
-//     $(window).load(function() {
-//                 $('.flexslider').flexslider({
-//                   animation: "slide",
-//                   rtl: true
-//                 });
-//               });
+        //回頂部
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+        $('.gotop').fadeIn();
+        } else {
+        $('.gotop').fadeOut();
+        }
+        });
+        $('.gotop').click(function() {
+        $('.body, html').animate({
+        scrollTop: 0
+        }, 500);
+        });
 
+})
+            
 
 //Scrollreveal//
 ScrollReveal().reveal('.js-fadeInBottom',{
