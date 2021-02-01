@@ -45,13 +45,13 @@ div.product-mb {
 }
 
 .jumbotron-1{
-    height: 500px;
+    height: 450px;
     /* border: 1px solid red; */
     padding-top: 120px;
     padding-bottom: 120px;
     background-image: url(../img/QA-banner.jpg);
     background-size:cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
     /* max-width: 1920px; */
     width: 100%;
@@ -66,7 +66,7 @@ div.product-mb {
 }
 
 @media screen and (max-width:768px){
-    .jumbotron-1{
+    /* .jumbotron-1{
         padding-top: 144px;
         padding-bottom: 80px;
         width: 100%;   
@@ -75,11 +75,11 @@ div.product-mb {
     .jumbotron-1 .logo-image{
     width: 200px;
     height: 200px;
-    }
-    /* .searchbox{
-        width: 95%;
-        margin: 0 auto;
     } */
+    .searchbox{
+        width: 80%;
+        margin: 0 auto;
+    }
     /* .js-fadeInBottom{
         margin-right: 0px;
 
