@@ -287,10 +287,10 @@ div.product-mb {
   }
 
   @media screen and (max-width:768px){
-    .ui-group h3{
+    .ui-group{
       display: block;
-      margin: 0 auto;
-      
+      margin: 0 auto; 
+
     }
   }
   
