@@ -54,6 +54,7 @@ text-align: center;
   padding-bottom: 80px;
   background-attachment: scroll;
   
+  
   }
 
 }
@@ -177,6 +178,7 @@ div.product-mb {
    font-size: 18px;
    width: 80%;
    margin: 30px auto 10px;
+   font-weight: bold;
  }
 
  /* h2.tour-title{
@@ -282,6 +284,14 @@ div.product-mb {
   .ui-group .button-group {
     display: inline-block;
     margin-right: 20px;
+  }
+
+  @media screen and (max-width:768px){
+    .ui-group h3{
+      display: block;
+      margin: 0 auto;
+      
+    }
   }
   
   /* color-shape */
