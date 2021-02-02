@@ -897,27 +897,27 @@ div.gotop{
 }
 .pararellax-1{
     /* border: 1px solid red; */
-    width: 15%;
-    left: 10%;
+    width: 30%;
+    left: 5%;
     top: 30%;
 }
 .pararellax-2{
     /* border: 1px solid red; */
     width: 50%;
-    right: -20;
-    top: 100%;
+    right: 20;
+    top: 90%;
 }
 .pararellax-3{
     /* border: 1px solid red; */
-    width: 50%;
+    width: 45%;
     left: -30%;
     top: 10%;
 } 
 .pararellax-4{
     /* border: 1px solid red; */
-    width: 50%;
+    width: 45%;
     left: -30%;
-    top: 35%;
+    top: 5%;
 } 
 
 
