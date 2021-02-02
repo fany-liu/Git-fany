@@ -275,8 +275,7 @@
         scrollTop: 0
         }, 500);
         });
-
-})
+    })
             
 
 //Scrollreveal//
@@ -326,43 +325,6 @@ var iso = new Isotope (masonryCol,{
 imagesLoaded(masonryCol).on('progress',function(){
     iso.layout();
 })
-
-// $('.masonry-row').masonry({
-//     itemSelector: '.masonry-col',
-// });
-// jQuery(window).on('load', function(){
-
-// $('masonry-row').masonry({
-//     // options
-
-//     itemSelector: '.masonry-col',
-//     columnWidth: 10,
-// });
-
-
-// $(window).load(function() {
-// /** 滾動載入 **/
-  
-//     $('masonry-row').infinitescroll({
-//  navSelector: '.masonry-row_Link',
-//  nextSelector: '.masonry-rol_Link a:first',
-//  itemSelector: '.eval-card .flow_square',
-//     },
-//     function(newElements) {
-//  $('.masonry-row').imagesLoaded( function() {
-//      $('.masonry-row').masonry('appended', newElements, true); 
-//  });
-//     });
-  
-/** 瀑布流布局 **/
-  
-//     $('.masonry-col').imagesLoaded( function() {
-//  $('.masonry-col').masonry({
-//      itemSelector: '.eval-card',
-//      horizontalOrder: true
-//  });
-//     });
-// }
 
 </script>
     
